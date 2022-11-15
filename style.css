@@ -1,0 +1,723 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22212c;
+  color: #837e9f;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "about-me my-projects my-projects"
+    "about-me post1 post2"
+    "social-medias recent-posts recent-posts"
+    "social-medias recent-post recent-post"
+    "technologies . ."
+    "experiences . ."
+    "education . ."
+    "footer footer footer";
+}
+
+.about-me {
+  background-color: #302f3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 2.5rem 1.875rem 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 21.75rem;
+  grid-area: about-me;
+}
+
+.perfil-picture {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.75rem 5.625rem 1.25rem;
+  border: 0.25rem solid #00ff00;
+}
+
+.my-name {
+  font-size: 1.438rem;
+  line-height: 1.813rem;
+  margin-bottom: 0.625rem;
+}
+
+.p-header {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin-bottom: 1.813rem;
+}
+
+.social-medias {
+  width: 21.75rem;
+  background-color: #302f3d;
+  margin: 0 2.5rem 1.875rem 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  grid-area: social-medias;
+}
+
+.group-social-media {
+  display: flex;
+  align-items: center;
+  margin: 0.063rem 0.938rem 1.25rem 0;
+}
+
+.icons-svg {
+  margin-right: 0.938rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #837e9f;
+}
+
+.align {
+  margin-top: 0.25rem;
+}
+
+.technologies {
+  width: 21.75rem;
+  background-color: #302f3d;
+  margin: 0 0 1.875rem 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  grid-area: technologies;
+}
+
+.title-section {
+  margin: 0.625rem 0 1.25rem 0;
+}
+
+.group {
+  background-color: #cb92b1;
+  border-radius: 1.875rem;
+  width: 5.375rem;
+  height: 1.5rem;
+  color: #000000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.938rem 0.938rem 0.625rem;
+}
+
+.p-technologies {
+  font-size: 0.625rem;
+  line-height: 0.813rem;
+}
+
+.experiences {
+  width: 21.75rem;
+  background-color: #302f3d;
+  margin: 0 0 1.875rem 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  grid-area: experiences;
+}
+
+.experiences-font {
+  margin: 0 0 0.625rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.font12 {
+  font-size: 0.75rem;
+}
+
+.last-p {
+  margin-bottom: 0.625rem;
+}
+
+.education {
+  width: 21.75rem;
+  background-color: #302f3d;
+  margin: 0 0 1.875rem 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  grid-area: education;
+}
+
+.my-projects {
+  width: 59.5rem;
+  background-color: #302f3d;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  margin: 2.5rem 2.5rem 1.938rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: my-projects;
+}
+
+.text1-projects {
+  margin-left: 0.625rem;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+}
+
+.text2-projects {
+  margin-right: 0.688rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.post1 {
+  grid-area: post1;
+}
+
+.post2 {
+  grid-area: post2;
+}
+
+.post {
+  width: 28.813rem;
+  background-color: #302f3d;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  margin: 0 1.875rem 1.875rem 0;
+}
+
+.onix {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.375rem;
+}
+
+.onix-left {
+  margin-left: 0.813rem;
+}
+
+.text-onix {
+  margin-bottom: 1.688rem;
+}
+
+.agroup-all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.625rem 0.625rem 0.625rem;
+}
+
+.group-projects {
+  display: flex;
+  align-items: center;
+}
+
+.group-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icons-svg-post {
+  margin-right: 0.5rem;
+}
+
+.icon-margin-left {
+  margin-left: 1rem;
+}
+
+.recent-posts {
+  width: 59.5rem;
+  background-color: #302f3d;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+  margin: 0 2.5rem 1.875rem 0;
+  grid-area: recent-posts;
+}
+
+.recent-post {
+  width: 59.5rem;
+  background-color: #302f3d;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  margin: 0 2.5rem 0 0;
+  display: flex;
+  grid-area: recent-post;
+}
+
+.picture-no-green {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.688rem 1.25rem 0.75rem 0.625rem;
+}
+
+.group-post h3 {
+  font-size: 1.125rem;
+  line-height: 1.438rem;
+  margin-bottom: 0.313rem;
+}
+
+.years-ago {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 1.375rem;
+}
+
+.error {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.688rem;
+}
+
+.group-post2 {
+  display: flex;
+  align-items: center;
+}
+
+.group-post2 p {
+  margin-right: 0.688rem;
+}
+
+section,
+header,
+footer {
+  border: 0.28rem solid transparent;
+}
+
+section:hover,
+header:hover,
+footer:hover {
+  border: 0.28rem solid wheat;
+  transition: 0.8s;
+}
+
+a {
+  border: 0.15rem solid transparent;
+  border-radius: 0.313rem;
+}
+
+a:hover {
+  border: 0.15rem solid whitesmoke;
+  transition: 0.8s;
+}
+
+footer {
+  grid-area: footer;
+  margin: 0 auto 1.25rem;
+  border-radius: 1.25rem;
+}
+
+@media (max-width: 989px) {
+  .p-header {
+    font-size: 1rem;
+  }
+  .group {
+    width: 7.375rem;
+    height: 2.5rem;
+  }
+
+  .p-technologies {
+    font-size: 1.125rem;
+  }
+
+  .my-projects {
+    width: 92%;
+  }
+
+  .post2 {
+    width: 90%;
+    margin-right: 100px;
+  }
+
+  .recent-posts {
+    width: 92%;
+  }
+
+  .recent-post {
+    width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "about-me"
+      "social-medias"
+      "technologies"
+      "experiences"
+      "education"
+      "my-projects"
+      "post1"
+      "post2"
+      "recent-posts"
+      "recent-post"
+      "footer";
+  }
+
+  .about-me {
+    margin: 2rem auto 1.875rem auto;
+    border-radius: 1.25rem;
+    padding: 0.25rem;
+    width: 22.75rem;
+    height: 14.75rem;
+  }
+
+  .perfil-picture {
+    width: 7rem;
+    height: 7rem;
+    margin: 0.75rem 0 0.25rem;
+  }
+  .my-name {
+    font-size: 1.3rem;
+    line-height: 1.813rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .social-medias {
+    margin: 0 auto 1.875rem auto;
+    width: 22.75rem;
+    padding: 1.35rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+
+  .technologies {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .group {
+    margin: 0 0.938rem 0.7rem 0.825rem;
+    width: 8.375rem;
+  }
+
+  .java-technologies {
+    font-size: 1.1rem;
+  }
+
+  .experiences {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .education {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .my-projects {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .post {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .agroup-all {
+    display: block;
+  }
+
+  .agroup-all > .group-projects {
+    margin-bottom: 20px;
+  }
+
+  .recent-posts {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .recent-post {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picture-no-green {
+    width: 7rem;
+    height: 7rem;
+    margin: 0.688rem auto 0.75rem;
+  }
+
+  .group-post2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .about-me,
+  .social-medias,
+  .technologies,
+  .experiences,
+  .education,
+  .my-projects,
+  .post,
+  .recent-posts,
+  .recent-post {
+    width: 90%;
+  }
+}
+
+@media (max-width: 512px) {
+  .group {
+    width: 9.375rem;
+  }
+
+  .p-technologies {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "about-me"
+      "social-medias"
+      "technologies"
+      "experiences"
+      "education"
+      "my-projects"
+      "post1"
+      "post2"
+      "recent-posts"
+      "recent-post"
+      "footer";
+  }
+
+  .about-me {
+    margin: 2rem auto 1.875rem auto;
+    border-radius: 1.25rem;
+    padding: 0.25rem;
+    width: 16.75rem;
+    height: 13.75rem;
+  }
+
+  .perfil-picture {
+    width: 7rem;
+    height: 7rem;
+    margin: 0.75rem 0 0.25rem;
+  }
+  .my-name {
+    font-size: 1.3rem;
+    line-height: 1.813rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .social-medias {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+    padding: 1.35rem;
+  }
+
+  .email {
+    font-size: 0.875rem;
+  }
+
+  .technologies {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .group {
+    margin: 0 0.938rem 0.7rem 0.825rem;
+    width: 4.375rem;
+  }
+
+  .java-technologies {
+    font-size: 0.625rem;
+  }
+
+  .experiences {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .education {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .my-projects {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .post {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .agroup-all {
+    display: block;
+  }
+
+  .agroup-all > .group-projects {
+    margin-bottom: 20px;
+  }
+
+  .recent-posts {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+  }
+
+  .recent-post {
+    margin: 0 auto 1.875rem auto;
+    width: 16.75rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picture-no-green {
+    width: 7rem;
+    height: 7rem;
+    margin: 0.688rem auto 0.75rem;
+  }
+
+  .group-post2 {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "about-me"
+      "social-medias"
+      "technologies"
+      "experiences"
+      "education"
+      "my-projects"
+      "post1"
+      "post2"
+      "recent-posts"
+      "recent-post"
+      "footer";
+  }
+
+  .about-me {
+    margin: 1rem 0.5rem 1.875rem 1.9rem;
+    border-radius: 1.25rem;
+    padding: 0.25rem;
+    width: 13.75rem;
+    height: 13.75rem;
+  }
+
+  .perfil-picture {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.75rem 0 0.25rem;
+  }
+  .my-name {
+    font-size: 1.3rem;
+    line-height: 1.813rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .social-medias {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+    padding: 0.65rem;
+  }
+
+  .email {
+    font-size: 0.688rem;
+  }
+
+  .technologies {
+    width: 13.75rem;
+    margin: 0 0 1.875rem 1.9rem;
+  }
+
+  .group {
+    margin: 0 0.938rem 0.7rem 0.825rem;
+    width: 3.375rem;
+  }
+
+  .java-technologies {
+    font-size: 0.525rem;
+  }
+
+  .experiences {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+  }
+
+  .education {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+  }
+
+  .my-projects {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+  }
+
+  .post {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+  }
+
+  .agroup-all {
+    display: block;
+  }
+
+  .agroup-all > .group-projects {
+    margin-bottom: 20px;
+  }
+
+  .recent-posts {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+  }
+
+  .recent-post {
+    margin: 0 0.5rem 1.875rem 1.9rem;
+    width: 13.75rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picture-no-green {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.688rem auto 0.75rem;
+  }
+
+  .group-post2 {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
