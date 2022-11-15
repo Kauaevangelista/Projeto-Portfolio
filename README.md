@@ -1,6 +1,6 @@
 # Desafio Portfólio Curso Discovery ( Rocketseat )
 
-![preview](./.github/preview.png)
+![preview](./.github/Preview.png)
 
 > Portfólio com responsividade
 
